@@ -29,11 +29,11 @@ export default function DetailBook() {
 
 
             <div className='md:w-1/2 w-full mb-6 md:mb-0 flex justify-center'>
-              <img src={selectedBook.image} alt="book-image" className="object-cover rounded-md"></img>
+              <img src={selectedBook?.image} alt="book-image" className="object-cover rounded-md"></img>
             </div>
 
-            <div className='flex flex-col gap-6'>
-              <div className='flex items-center justify-center gap-3 w-full'>
+            <div className='flex flex-col gap-6 w-full'>
+              <div className='flex items-center justify-center gap-3'>
                 <div className='w-1/2'>
                   <label htmlFor="title" className="block text-sm font-medium text-gray-700">
                     Género
@@ -74,7 +74,7 @@ export default function DetailBook() {
                   <label htmlFor="description" className="block text-sm font-medium text-gray-700 mr-3">
                     Estado:
                   </label>
-                  <Chip color={`${selectedBook.availability ? 'success' : 'error'}`}> {selectedBook.availability ? 'Disponible' : 'Agotado'}</Chip>
+                  <Chip color={`${selectedBook?.availability ? 'success' : 'error'}`}> {selectedBook?.availability ? 'Disponible' : 'Agotado'}</Chip>
                 </div>
               </div>
             </div>

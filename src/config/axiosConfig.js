@@ -11,8 +11,6 @@ const api = axios.create({
 api.interceptors.request.use(
     (config) => {
         const token = store.getState().auth.token;
-        debugger;
-
         const publicRoutes = [ROUTES.LOGIN, ROUTES.REGISTER, ROUTES.HOME, ROUTES.AUTHORS];
         const isPublicRoute = publicRoutes.includes(config.url);
 

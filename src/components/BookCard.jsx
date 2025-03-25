@@ -39,7 +39,5 @@ export default function BookCard({ book, onDetailBook, onSelectBookToDelete, onS
         </div>
       </div>
     </div>
-
   )
-
 }

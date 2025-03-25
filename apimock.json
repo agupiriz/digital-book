@@ -1,0 +1,267 @@
+{
+  "books": [
+    {
+      "id": "1c2f2de9-b4f8-431a-87db-0a40b80331ed",
+      "title": "Cien años de soledad",
+      "author": "Gabriel García Márquez",
+      "genre": "Realismo mágico",
+      "isbn": "978-0-06-112008-4",
+      "description": "La historia multigeneracional de la familia Buendía, y la fundación y caída de su ciudad natal, Macondo.",
+      "image": "https://picsum.photos/id/237/400/600",
+      "publicationYear": 1967,
+      "availability": true
+    },
+    {
+      "id": "f4b02282-dd6a-4a3f-b45a-f36cf532ea06",
+      "title": "1984",
+      "author": "George Orwell",
+      "genre": "Ciencia ficción distópica",
+      "isbn": "978-0-452-28423-4",
+      "description": "Una novela distópica sobre un futuro totalitario donde el gobierno controla todos los aspectos de la vida de las personas.",
+      "image": "https://picsum.photos/id/238/200/300",
+      "publicationYear": 1949,
+      "availability": false
+    },
+    {
+      "id": "b3b4a2ee-e7ef-4ad9-8b0d-56f00c8e1ec1",
+      "title": "El señor de los anillos",
+      "author": "J.R.R. Tolkien",
+      "genre": "Fantasía épica",
+      "isbn": "978-0-618-26026-3",
+      "description": "Un grupo de hobbits emprenden un peligroso viaje para destruir un anillo mágico y salvar la Tierra Media de la oscuridad.",
+      "image": "https://picsum.photos/200/300?grayscale",
+      "publicationYear": 1954,
+      "availability": true
+    },
+    {
+      "id": "054b28dd-de38-407d-9f3e-2ea42c7b29e8",
+      "title": "Orgullo y prejuicio",
+      "author": "Jane Austen",
+      "genre": "Novela romántica",
+      "isbn": "978-0-14-143951-8",
+      "description": "Una historia de amor y prejuicios sociales en la Inglaterra del siglo XIX, centrada en la relación entre Elizabeth Bennet y el Sr. Darcy.",
+      "image": "https://picsum.photos/id/239/200/300",
+      "publicationYear": 1813,
+      "availability": true
+    },
+    {
+      "id": "c4a4465e-76c7-4a2a-8bd4-f647ffb4c66c",
+      "title": "Dune",
+      "author": "Frank Herbert",
+      "genre": "Ciencia ficción",
+      "isbn": "978-0441172719",
+      "description": "En un futuro lejano, las casas nobles luchan por el control del planeta desértico Arrakis, la única fuente de la valiosa especia melange.",
+      "image": "https://picsum.photos/id/240/200/300",
+      "publicationYear": 1965,
+      "availability": true
+    },
+    {
+      "id": "0fa13c19-cff0-4678-ac1c-693cfbaa50b5",
+      "title": "Fundación",
+      "author": "Isaac Asimov",
+      "genre": "Ciencia ficción",
+      "isbn": "978-0553293357",
+      "description": "El psicohistoriador Hari Seldon desarrolla un plan para salvar a la civilización galáctica de la inminente caída, estableciendo la Fundación.",
+      "image": "https://picsum.photos/id/241/200/300",
+      "publicationYear": 1951,
+      "availability": false
+    },
+    {
+      "id": "3b9d2e1a-e5c2-4f9a-9d1b-8a7e3c4d5f6g",
+      "title": "Matar un ruiseñor",
+      "author": "Harper Lee",
+      "genre": "Ficción sureña",
+      "isbn": "978-0-06-112008-0",
+      "description": "Ambientada en el sur de Estados Unidos durante la Gran Depresión, la novela explora temas de raza, clase y justicia a través de los ojos de una niña llamada Scout.",
+      "image": "https://picsum.photos/id/242/200/300",
+      "publicationYear": 1960,
+      "availability": true
+    },
+    {
+      "id": "8c7e5f4d-3b2a-4e1c-9f8d-6a5b4c3e2f1a",
+      "title": "Don Quijote de la Mancha",
+      "author": "Miguel de Cervantes",
+      "genre": "Novela de caballerías",
+      "isbn": "978-84-239-7924-3",
+      "description": "La historia de un hidalgo que, influenciado por las novelas de caballerías, decide convertirse en caballero andante y vivir aventuras.",
+      "image": "https://picsum.photos/id/243/200/300",
+      "publicationYear": 1605,
+      "availability": true
+    },
+    {
+      "id": "5a3b1c2d-e8f9-4b0a-9c7d-2e1f0a9b8c7d",
+      "title": "El Gran Gatsby",
+      "author": "F. Scott Fitzgerald",
+      "genre": "Ficción",
+      "isbn": "978-0-7432-7356-5",
+      "description": "Ambientada en la Edad de Jazz, la novela explora temas de riqueza, amor e ilusiones en la sociedad estadounidense.",
+      "image": "https://picsum.photos/id/244/200/300",
+      "publicationYear": 1925,
+      "availability": false
+    },
+    {
+      "id": "9d8c7b6a-f5e4-4d3c-b2a1-1e0f9d8c7b6a",
+      "title": "Hamlet",
+      "author": "William Shakespeare",
+      "genre": "Tragedia",
+      "isbn": "978-0-7434-7712-3",
+      "description": "Una tragedia sobre el príncipe Hamlet de Dinamarca y su búsqueda de venganza por el asesinato de su padre.",
+      "image": "https://picsum.photos/id/245/200/300",
+      "publicationYear": 1603,
+      "availability": true
+    },
+    {
+      "id": "6e5d4c3b-a2f1-4e0d-8c9a-7b6a5f4d3c2b",
+      "title": "Los juegos del hambre",
+      "author": "Suzanne Collins",
+      "genre": "Ciencia ficción distópica",
+      "isbn": "978-0-439-02352-8",
+      "description": "En un futuro distópico, adolescentes son seleccionados como 'tributos' para luchar a muerte en un evento televisado llamado los Juegos del Hambre.",
+      "image": "https://picsum.photos/id/246/200/300",
+      "publicationYear": 2008,
+      "availability": true
+    },
+    {
+      "id": "2f1a0b9d-c8e7-4a6b-9d4c-3e2f1a0b9d8c",
+      "title": "Harry Potter y la piedra filosofal",
+      "author": "J.K. Rowling",
+      "genre": "Fantasía",
+      "isbn": "978-0-7475-3269-6",
+      "description": "El inicio de la saga de Harry Potter, donde descubre que es un mago y comienza su educación en el Colegio Hogwarts de Magia y Hechicería.",
+      "image": "https://picsum.photos/id/247/200/300",
+      "publicationYear": 1997,
+      "availability": true
+    },
+    {
+      "id": "7g4h3i2j-b9a8-4c5d-e6f7-1a2b3c4d5e6f",
+      "title": "El Hobbit",
+      "author": "J.R.R. Tolkien",
+      "genre": "Fantasía",
+      "isbn": "978-0-547-92822-7",
+      "description": "Bilbo Bolsón, un hobbit de la Comarca, se ve envuelto en una aventura para recuperar un tesoro custodiado por el dragón Smaug.",
+      "image": "https://picsum.photos/id/248/200/300",
+      "publicationYear": 1937,
+      "availability": true
+    },
+    {
+      "id": "4d3e2f1a-0b9c-8d7e-6f5a-9b8c7d6e5f4a",
+      "title": "Cazadores de sombras: Ciudad de hueso",
+      "author": "Cassandra Clare",
+      "genre": "Fantasía urbana",
+      "isbn": "978-1-4814-2425-4",
+      "description": "Clary Fray descubre que no es quien cree ser y se adentra en el mundo de los cazadores de sombras, seres mitad ángel mitad humano que cazan demonios.",
+      "image": "https://picsum.photos/id/249/200/300",
+      "publicationYear": 2007,
+      "availability": false
+    },
+    {
+      "id": "1b0a9d8c-7e6f-5a4b-3c2d-e8f9a0b1c2d3",
+      "title": "El código Da Vinci",
+      "author": "Dan Brown",
+      "genre": "Thriller",
+      "isbn": "978-0-307-27767-2",
+      "description": "El profesor de simbología Robert Langdon se ve envuelto en un misterio relacionado con el asesinato de un curador del Louvre y un secreto oculto durante siglos.",
+      "image": "https://picsum.photos/id/250/200/300",
+      "publicationYear": 2003,
+      "availability": true
+    },
+    {
+      "id": "8f7e6d5c-4b3a-2e1f-0a9b-8c7d6e5f4a3b",
+      "title": "Los pilares de la Tierra",
+      "author": "Ken Follett",
+      "genre": "Ficción histórica",
+      "isbn": "978-0-451-23328-5",
+      "description": "Ambientada en la Inglaterra del siglo XII, la novela narra la construcción de una catedral gótica en medio de intrigas políticas y religiosas.",
+      "image": "https://picsum.photos/id/251/200/300",
+      "publicationYear": 1989,
+      "availability": true
+    },
+    {
+      "id": "5c4b3a2e-1f0a-9d8c-7e6f-5a4b-3c2d-e8f9a0b1",
+      "title": "Sapiens: De animales a dioses",
+      "author": "Yuval Noah Harari",
+      "genre": "No ficción",
+      "isbn": "978-0-06-231609-7",
+      "description": "Un recorrido por la historia de la humanidad, desde los primeros humanos hasta el presente, explorando cómo el Homo sapiens llegó a dominar el mundo.",
+      "image": "https://picsum.photos/id/252/200/300",
+      "publicationYear": 2011,
+      "availability": true
+    },
+    {
+      "title": "El alquimista editado",
+      "author": "Paulo Coelho",
+      "genre": "Ficción filosófica",
+      "isbn": "978-0-06-112241-5",
+      "description": "La historia de Santiago, un joven pastor andaluz que sigue su sueño de encontrar un tesoro cerca de las pirámides de Egipto.",
+      "image": "https://picsum.photos/id/253/200/300",
+      "publicationYear": 1988,
+      "availability": true,
+      "id": "2a1b0c9d-8e7f-6d5c-4b3a-2e1f-0a9b8c7d6e5f"
+    },
+    {
+      "id": "9f8e7d6c-5b4a-3e2f-1a0b-9d8c7e6f5a4b",
+      "title": "Moby Dick",
+      "author": "Herman Melville",
+      "genre": "Aventura",
+      "isbn": "978-0-141-43951-8",
+      "description": "La épica historia del capitán Ahab y su obsesiva búsqueda de la ballena blanca Moby Dick.",
+      "image": "https://picsum.photos/id/254/200/300",
+      "publicationYear": 1851,
+      "availability": true
+    },
+    {
+      "id": "6d5c4b3a-2e1f-0a9b-8c7d-6e5f-4a3b-2c1d",
+      "title": "Crimen y castigo",
+      "author": "Fiódor Dostoyevski",
+      "genre": "Novela psicológica",
+      "isbn": "978-0-486-41587-2",
+      "description": "La historia de Rodión Raskólnikov, un estudiante empobrecido que comete un asesinato y lidia con las consecuencias psicológicas y morales de su acto.",
+      "image": "https://picsum.photos/id/255/200/300",
+      "publicationYear": 1866,
+      "availability": false
+    },
+    {
+      "id": "3a2b1c0d-9e8f-7d6c-5b4a-3e2f-1a0b9d8c7e6f",
+      "title": "Orgullo y prejuicio y zombis",
+      "author": "Seth Grahame-Smith",
+      "genre": "Parodia literaria",
+      "isbn": "978-1-59477-833-2",
+      "description": "Una versión paródica de la novela clásica de Jane Austen, donde la Inglaterra del siglo XIX se enfrenta a una plaga de zombis.",
+      "image": "https://picsum.photos/id/256/200/300",
+      "publicationYear": 2009,
+      "availability": true
+    }
+  ],
+  "authors": [
+    {
+      "id": "a2001069-0555-4de7-89d4-caf1a2dccd8d",
+      "name": "Gabriel García Márquez",
+      "numberOfBooks": 10
+    },
+    {
+      "id": "13ca0239-a8f6-42b2-9d28-011ede6ff492",
+      "name": "George Orwell",
+      "numberOfBooks": 6
+    },
+    {
+      "id": "33da2751-4988-467a-8438-8b9e255a5285",
+      "name": "J.R.R. Tolkien",
+      "numberOfBooks": 12
+    },
+    {
+      "id": "5b595ef3-73a1-42e3-97d8-ce139a163db9",
+      "name": "Jane Austen",
+      "numberOfBooks": 8
+    },
+    {
+      "id": "3c92249e-3d99-403d-a088-ac55729a269e",
+      "name": "Frank Herbert",
+      "numberOfBooks": 9
+    },
+    {
+      "id": "0395d9a6-5179-4f50-9c85-60bdac791d62",
+      "name": "Isaac Asimov",
+      "numberOfBooks": 15
+    }
+  ]
+}

@@ -7,6 +7,7 @@ import SearchInput from "../../components/SearchInput";
 import DeleteModal from "../../components/DeleteModal";
 import useBooks from "../../hooks/useBooks";
 import CardsSkeleton from "../../components/CardsSkeleton";
+import useSearchInput from "../../hooks/useSearchInput";
 
 export default function Library() {
   const [showModalDelete, setShowModalDelete] = useState(false);
@@ -14,6 +15,7 @@ export default function Library() {
   const navigate = useNavigate();
   const { enqueueSnackbar } = useSnackbar()
   const { loadBooks, loading, error, books, removeBook, selectBookDetail, doSelectBookToUpdate } = useBooks();
+  const { searchInput, loadingSearch } = useSearchInput();
 
   useEffect(() => {
     loadBooks();
@@ -53,11 +55,16 @@ export default function Library() {
     onCloseModal();
   }
 
+  const onSearchInput = ({ target }) => {
+    searchInput(target.value)
+  }
+
   if (loading) {
     return <CardsSkeleton />;
   }
+
   return (
-    <div className="flex flex-col justify-center py-6 w-full">
+    <div className="flex flex-col justify-center py-6 w-full bg-slate-200/60">
       {showModalDelete && (
         <DeleteModal
           visible={showModalDelete}
@@ -68,20 +75,23 @@ export default function Library() {
         />
       )}
       <div className="md:w-full flex justify-center content-center mx-2">
-        <SearchInput className="md:w-1/2" />
+        <SearchInput className="md:w-1/2" onChange={onSearchInput} isLoading={loadingSearch} />
       </div>
       <h1 className="text-3xl font-bold text-center my-10">Libros</h1>
-      <div className="flex flex-wrap w-full h-full gap-3 justify-center">
-        {books.map((book) => {
-          return <BookCard
-            key={book.isbn}
-            book={book}
-            onDetailBook={onDetailBook}
-            onSelectBookToDelete={onSelectBookToDelete}
-            onSelectBookToUpdate={onSelectBookToUpdate}
-          />
-        })}
-      </div>
-    </div>
+      {!!loadingSearch && <CardsSkeleton />}
+      {!loadingSearch &&
+        <div className="flex flex-wrap w-full h-full gap-3 justify-center">
+          {books.map((book) => {
+            return <BookCard
+              key={book.isbn}
+              book={book}
+              onDetailBook={onDetailBook}
+              onSelectBookToDelete={onSelectBookToDelete}
+              onSelectBookToUpdate={onSelectBookToUpdate}
+            />
+          })}
+        </div>
+      }
+    </div >
   );
 }

@@ -98,7 +98,7 @@ const SearchInput = forwardRef((props, ref) => {
     // this is just for the example, the props bellow should be passed by the parent component
     label: "",
     type: "search",
-    placeholder: "Buscar por título o ISBN...",
+    placeholder: "Buscar por título",
     startContent: (
       <SearchIcon className="text-black/50 mb-0.5 dark:text-white/90 text-slate-400 pointer-events-none flex-shrink-0" />
     ),
