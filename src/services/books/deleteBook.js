@@ -1,10 +1,10 @@
-import axios from "axios";
 import { booksURL } from "./URLS";
+import api from "../../config/axiosConfig";
 
 const deleteBook = async (bookId) => {
   try {
     if (bookId) {
-      const response = await axios.delete(`${booksURL}/${bookId}`);
+      const response = await api.delete(`${booksURL}/${bookId}`);
       if (response.status !== 200 && response.status !== 204) {
         throw new Error(`Error HTTP: ${response.status}`);
       }

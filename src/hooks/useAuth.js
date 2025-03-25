@@ -4,6 +4,7 @@ import { login, logout } from '../store/authSlice';
 const useAuth = () => {
     const dispatch = useDispatch();
     const isAuthenticated = useSelector((state) => state.auth.isAuthenticated);
+    const token = useSelector((state) => state.auth.token);
 
     const doLogin = (loginData) => {
         dispatch(login(loginData));
@@ -16,6 +17,7 @@ const useAuth = () => {
         doLogin,
         doLogout,
         isAuthenticated,
+        token,
     };
 };
 
