@@ -59,13 +59,13 @@ export default function NewBook() {
   };
 
   return (
-    <div className="flex flex-col w-full">
+    <div className="flex flex-col w-full overflow-scroll">
       <div className="flex items-center justify-center w-full py-3 px-2">
         <div className="px-4 py-10 bg-white shadow-lg sm:rounded-lg sm:p-20 w-3/4">
           <h2 className="text-2xl font-bold mb-8 text-center">Alta de libro</h2>
-          <form onSubmit={handleSubmit} className="space-y-6 pt-8">
+          <form onSubmit={handleSubmit} className="">
             <div className='flex items-center justify-center gap-3 w-full'>
-              <div className='w-1/2'>
+              <div className='w-1/2 m-3'>
                 <label htmlFor="title" className="block text-sm font-medium text-gray-700">
                   Título
                 </label>
@@ -78,7 +78,7 @@ export default function NewBook() {
                   required
                 />
               </div>
-              <div className='w-1/2'>
+              <div className='w-1/2 m-3'>
                 <label htmlFor="author" className="block text-sm font-medium text-gray-700">
                   Autor
                 </label>
@@ -94,7 +94,7 @@ export default function NewBook() {
             </div>
 
             <div className='flex items-center justify-center gap-3 w-full'>
-              <div className='w-1/2'>
+              <div className='w-1/2 m-3'>
                 <label htmlFor="genre" className="block text-sm font-medium text-gray-700">
                   Género
                 </label>
@@ -107,7 +107,7 @@ export default function NewBook() {
                   required
                 />
               </div>
-              <div className='w-1/2'>
+              <div className='w-1/2 m-3'>
                 <label htmlFor="isbn" className="block text-sm font-medium text-gray-700">
                   ISBN
                 </label>
@@ -122,7 +122,7 @@ export default function NewBook() {
               </div>
             </div>
 
-            <div>
+            <div className='m-3'>
               <label htmlFor="description" className="block text-sm font-medium text-gray-700">
                 Descripción
               </label>
@@ -136,7 +136,7 @@ export default function NewBook() {
               />
             </div>
 
-            <div className='flex items-center justify-center gap-3 w-full'>
+            <div className='flex items-center justify-center gap-3 w-full '>
               <div className='w-1/2'>
                 <label htmlFor="image" className="block text-sm font-medium text-gray-700">
                   URL de la imagen
