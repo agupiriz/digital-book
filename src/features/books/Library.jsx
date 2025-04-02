@@ -81,7 +81,7 @@ export default function Library() {
       {!!loadingSearch && <CardsSkeleton />}
       {!loadingSearch &&
         <div className="flex flex-wrap w-full h-full gap-3 justify-center">
-          {books.map((book) => {
+          {books?.map((book) => {
             return <BookCard
               key={book.isbn}
               book={book}

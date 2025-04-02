@@ -9,6 +9,11 @@ const useAuth = () => {
     const doLogin = (loginData) => {
         dispatch(login(loginData));
     };
+
+    const doRegister = (loginData) => {
+        dispatch(login(loginData));
+    };
+
     const doLogout = () => {
         dispatch(logout());
     };
@@ -16,6 +21,7 @@ const useAuth = () => {
     return {
         doLogin,
         doLogout,
+        doRegister,
         isAuthenticated,
         token,
     };

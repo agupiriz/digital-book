@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import ROUTES from '../../routes';
+import register from '../../services/auth/register';
 
 export default function Register() {
   const [email, setEmail] = useState('');
@@ -8,8 +9,10 @@ export default function Register() {
   const [confirmPassword, setConfirmPassword] = useState('');
   const navigate = useNavigate();
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
+
+    await register({email, password: confirmPassword});
     navigate(ROUTES.LOGIN);
   };
 

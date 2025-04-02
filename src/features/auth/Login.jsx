@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import ROUTES from '../../routes';
 import useAuth from '../../hooks/useAuth';
+import login from '../../services/auth/login';
 
 export default function Login() {
   const [email, setEmail] = useState('');
@@ -11,9 +12,12 @@ export default function Login() {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+
+    const { token } = await login({ email, password });
+
     const mockResponse = {
       user: { email },
-      token: 'mock-jwt-token'
+      token: token
     };
 
     doLogin(mockResponse);

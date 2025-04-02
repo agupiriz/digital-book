@@ -20,8 +20,8 @@ const useBooks = () => {
         setError(null);
         try {
             const fetchedBooks = await fetchBooks();
-            if (fetchedBooks)
-                dispatch(setBooks(fetchedBooks));
+            if (fetchedBooks?.items)
+                dispatch(setBooks(fetchedBooks?.items));
         } catch (err) {
             setError(err.message || 'Error al cargar los libros');
         } finally {

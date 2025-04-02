@@ -13,8 +13,7 @@ api.interceptors.request.use(
         const token = store.getState().auth.token;
         const publicRoutes = [ROUTES.LOGIN, ROUTES.REGISTER, ROUTES.HOME, ROUTES.AUTHORS];
         const isPublicRoute = publicRoutes.includes(config.url);
-
-        if (!isPublicRoute && token) {
+        if (token) {
             config.headers.Authorization = `Bearer ${token}`;
         }
         return config;
